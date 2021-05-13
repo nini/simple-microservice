@@ -161,6 +161,13 @@
   dependencies:
     "@types/koa" "*"
 
+"@types/koa-router@^7.4.2":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.2.tgz#b12d7095e844f4d0081b32742691a4d2e5a8046a"
+  integrity sha512-A9fTLdSHeLQpmtAPUKvvmG+xHHH5Yclqhlmz1bd5BTfdvNo37H8hzNaNpO2mgUri8Wk8fRH9NLpFRHW0wqraAw==
+  dependencies:
+    "@types/koa" "*"
+
 "@types/koa@*", "@types/koa@^2.13.1":
   version "2.13.1"
   resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.13.1.tgz#e29877a6b5ad3744ab1024f6ec75b8cbf6ec45db"
@@ -306,6 +313,23 @@ acorn@^7.4.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
+ajv-formats@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ajv-formats/-/ajv-formats-2.1.0.tgz#96eaf83e38d32108b66d82a9cb0cfa24886cdfeb"
+  integrity sha512-USH2jBb+C/hIpwD2iRjp0pe0k+MvzG0mlSn/FIdCgQhUb9ALPRjt2KIQdfZDS9r0ZIeUAg7gOu9KL0PFqGqr5Q==
+  dependencies:
+    ajv "^8.0.0"
+
+ajv@8.3.0, ajv@^8.0.0, ajv@^8.0.1:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.3.0.tgz#25ee7348e32cdc4a1dbb38256bf6bdc451dd577c"
+  integrity sha512-RYE7B5An83d7eWnDR8kbdaIFqmKCNsP16ay1hDbJEU+sa0e3H9SebskCt0Uufem6cfAVu7Col6ubcn/W+Sm8/Q==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.2.2"
+
 ajv@^6.10.0, ajv@^6.12.4:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
@@ -314,16 +338,6 @@ ajv@^6.10.0, ajv@^6.12.4:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
-    uri-js "^4.2.2"
-
-ajv@^8.0.1:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.3.0.tgz#25ee7348e32cdc4a1dbb38256bf6bdc451dd577c"
-  integrity sha512-RYE7B5An83d7eWnDR8kbdaIFqmKCNsP16ay1hDbJEU+sa0e3H9SebskCt0Uufem6cfAVu7Col6ubcn/W+Sm8/Q==
-  dependencies:
-    fast-deep-equal "^3.1.1"
-    json-schema-traverse "^1.0.0"
-    require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
 ansi-align@^3.0.0:
@@ -1463,6 +1477,11 @@ json-schema-traverse@^1.0.0:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
 
+json-schema@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.3.0.tgz#90a9c5054bd065422c00241851ce8d59475b701b"
+  integrity sha512-TYfxx36xfl52Rf1LU9HyWSLGPdYLL+SQ8/E/0yVyKG8wCCDaSrhPap0vEdlsZWRaS6tnKKLPGiEJGiREVC8kxQ==
+
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
@@ -2467,6 +2486,15 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validate-value@^8.9.28:
+  version "8.9.28"
+  resolved "https://registry.yarnpkg.com/validate-value/-/validate-value-8.9.28.tgz#496484cf8449d63918e139c3e5216b01c49d522f"
+  integrity sha512-E92PRzNaWVw9iRUeOoUoMiJEH9xtqvgLJmuEXuNDtZylQmzl2UtUyuYOP3Ui8hHnvoYmtlcxgEMM+57qDwrGmA==
+  dependencies:
+    ajv "8.3.0"
+    ajv-formats "2.1.0"
+    json-schema "0.3.0"
 
 vary@^1.1.2:
   version "1.1.2"
