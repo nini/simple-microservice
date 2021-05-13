@@ -1,0 +1,8 @@
+services:
+  simple-microservice-web:
+    container_name: simple-microservice-web
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src
